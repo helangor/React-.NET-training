@@ -1,0 +1,9 @@
+﻿Asenna Visual Studion Package Manager Consolen (PMC) kautta seuraavat paketit:
+
+1. Install-Package Microsoft.EntityFrameworkCore.Tools
+2. Install-Package Microsoft.EntityFrameworkCore
+3. Install-Package Microsoft.EntityFrameworkCore.SqlServer
+
+Muodosta tietokantamalli seuraavalla komennolla:
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
